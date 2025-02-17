@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 20px 80px; /* Increase padding-bottom to lower the bottom line */
+  text-align: center;
+  border: 2px solid #B0B0B0; /* Border around main components */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dice-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px 20px 20px;
+  gap: 50px; /* Bring dice closer together */
+}
+
+body {
+  background-color: #121212;
+  color: #FFFFFF;
+  font-family: 'Indie Flower', cursive;
+  margin: 0;
+  padding: 50px 0; /* Move the app down */
+  box-sizing: border-box;
+}
+
+h1.title {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  color: #b0b0b0; /* Light grey for the title */
+  margin-bottom: 0px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+p {
+  font-size: 3rem;
+  color: #4ECCA3;
+  font-family: 'Indie Flower', cursive;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.btn {
+  background-color: #A9A9A9; /* Dark grey for the button */
+  color: #000000; /* Black text for contrast */
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #8F8F8F; /* Slightly darker grey on hover */
+  transform: translateY(-2px);
+}
+
+.pressed {
+  background: #ffffff;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px 120px;
+  }
+
+  h1.title {
+    font-size: 3.5rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 20px 40px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
