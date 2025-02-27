@@ -1,40 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
+  background: #1e1e1e;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  width: 340px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  max-width: 400px;
+  justify-content: flex-start;
   margin: 0 auto;
-  padding: 20px 20px 80px; /* Increase padding-bottom to lower the bottom line */
-  text-align: center;
-  border: 2px solid #B0B0B0; /* Border around main components */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .dice-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 20px 0;
-  padding: 20px 20px 20px;
-  gap: 50px; /* Bring dice closer together */
+  margin: 2rem 0;
+  gap: 50px;
 }
 
 body {
-  background-color: #121212;
-  color: #FFFFFF;
   font-family: 'Indie Flower', cursive;
+  background: #121212;
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   margin: 0;
-  padding: 50px 0; /* Move the app down */
-  box-sizing: border-box;
 }
 
 h1.title {
   font-family: 'Lobster', cursive;
-  font-size: 4rem;
-  color: #b0b0b0; /* Light grey for the title */
-  margin-bottom: 0px;
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
   text-shadow: 2px 2px 4px #000000;
 }
 
@@ -51,19 +58,20 @@ img {
 }
 
 .btn {
-  background-color: #A9A9A9; /* Dark grey for the button */
-  color: #000000; /* Black text for contrast */
+  background-color: #007bff;
+  color: white;
   border: none;
-  padding: 15px 30px;
-  font-size: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  margin-top: 2rem;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-size: 1.1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-  background-color: #8F8F8F; /* Slightly darker grey on hover */
+  background-color: #0069d9;
   transform: translateY(-2px);
 }
 
